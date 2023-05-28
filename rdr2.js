@@ -82,7 +82,8 @@ if (specificDiv) {
     // Update the HTML and start countdown
     
 	  var countdown = localStorage.getItem('countdown');
-   
+   	  var countdownn = localStorage.getItem('countdown');
+
     var countdownHTML = '<center>' +
       '<div class="center">' +
       '  <div class="center">' +
@@ -114,7 +115,7 @@ if (specificDiv) {
         footinElement.innerHTML = finalHTML;
 		  clearAllCookies()
       } else {
-        footinElement.querySelector('.rd_btn').innerText = 'Please wait ' + countdown + ' seconds ...';
+        footinElement.querySelector('.rd_btn').innerText = 'Please wait ' + countdownn + ' seconds ...';
       }
     }, 1000);
   });
@@ -252,10 +253,11 @@ if (elementToRemove) {
   elementToRemove.parentNode.removeChild(elementToRemove);
 }
 
-	
+	   	  var countdownn = localStorage.getItem('countdown');
+
   // Replace the HTML content of the top_nav element
   var topNavElement = document.getElementById('top_navmsg');
-  topNavElement.innerHTML = '<center><p class="large">Please wait <span id="countdown" class="PurpleTxt"></span> seconds ...</p></center>';
+  topNavElement.innerHTML = '<center><p class="large">Please wait <span id="countdown" class="PurpleTxt">'+countdownn+'</span> seconds ...</p></center>';
 
   // Start the countdown of 6 seconds
    var countdown = localStorage.getItem('countdown');
