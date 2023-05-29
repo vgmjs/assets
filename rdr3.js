@@ -176,7 +176,7 @@ if (specificDiv) {
     var countdownHTML = '<center>' +
       '<div class="center">' +
       '  <div class="center">' +
-      '    <a class="rd_btn">Please wait ' + countdown + ' seconds ...</a>' +
+      '    <a class="rd_btn">Please wait ' + countdownn + ' seconds ...</a>' +
       '  </div>' +
       '</div>' +
       '<div id="footer_sr">' +
@@ -204,7 +204,7 @@ if (specificDiv) {
         footinElement.innerHTML = finalHTML;
 		  clearAllCookies()
       } else {
-        footinElement.querySelector('.rd_btn').innerText = 'Please wait ' + countdownn + ' seconds ...';
+        footinElement.querySelector('.rd_btn').innerText = 'Please wait ' + countdown + ' seconds ...';
       }
     }, 1000);
   });
