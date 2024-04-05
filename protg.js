@@ -30,7 +30,7 @@ function handleLinkClick(event) {
   if (link && !isSameHost(link)) {
     const lastOpenTime = localStorage.getItem('lastOpenTime');
     const currentTime = new Date().getTime();
-    const twentyFourHours = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+    const twentyFourHours = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
     // Check if it's been more than 24 hours since the last open time
     if (!lastOpenTime || currentTime - lastOpenTime > twentyFourHours) {
